@@ -1,2 +1,3 @@
 testCallingConventions()
 testJUnit()
+testObjectOriented()

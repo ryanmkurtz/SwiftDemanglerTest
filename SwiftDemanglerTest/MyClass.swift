@@ -1,4 +1,4 @@
-class MyClass {
+class MyClass : MyParentClass {
     var x: Int
     var y: Int
     var z: Int {
@@ -22,5 +22,13 @@ class MyClass {
     
     func myMethod(label1 arg1: Int, label2 arg2: Int) -> Int {
         return x &+ y &+ arg1 &+ arg2
+    }
+    
+    override func getName() -> String {
+        return "MyClass"
+    }
+    
+    override func getFavoriteNumber() -> Int {
+        return 2
     }
 }

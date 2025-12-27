@@ -529,7 +529,7 @@ func functionString(_ arg1: String) -> String {
 }
 func testFunctionString() {
     let a = functionString("test")
-    let b = a.index(a.startIndex, offsetBy: 7)
+    let b = a.index(a.startIndex, offsetBy: 3)
     printInt(b.hashValue)
 }
 //-----------------------------------------------------------------------------
@@ -546,7 +546,7 @@ func functionSIMD(_ arg1 : SIMD64<Int>) -> SIMD64<Int> {
     return arg1
 }
 func testFunctionSIMD() {
-    var simd = SIMD64<Int>(arrayLiteral: 2, 4)
+    var simd = SIMD64<Int>(repeating: 2)
     simd = functionSIMD(simd)
     printInt(simd.hashValue)
 }
